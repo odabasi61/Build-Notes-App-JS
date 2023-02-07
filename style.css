@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.8rem;
+  background-color: #bfdf9b;
+  color: white;
+  font-family: "Shadows Into Light", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.container {
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 26rem);
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+  background-color: #73470e;
+  height: 25rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem 2rem;
+}
+
+.add-box {
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.add-box,
+.icon,
+.bottom-content {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-content {
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5rem;
+}
+
+.icon {
+  height: 8rem;
+  width: 8rem;
+  font-size: 4rem;
+  border-radius: 50%;
+  border: 2px dashed white;
+  justify-content: center;
+}
+
+.add-box p {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note p {
+  font-size: 2rem;
+}
+
+.note span {
+  font-weight: 400;
+}
+
+.settings i {
+  cursor: pointer;
+}
+
+.settings {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  height: 2.5rem;
+  border-radius: 0;
+}
