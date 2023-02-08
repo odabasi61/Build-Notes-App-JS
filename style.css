@@ -84,6 +84,11 @@ body {
   font-weight: 400;
 }
 
+.note .details {
+  max-height: 17rem;
+  overflow-y: auto;
+}
+
 i {
   cursor: pointer;
 }
@@ -97,15 +102,15 @@ i {
   width: 11rem;
   height: 3rem;
   bottom: 5.5rem;
-  right: -.5rem;
+  right: -0.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
   transform: scale(0);
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
   transform-origin: bottom right;
 }
 
-.settings:hover .menu {
+.settings.show .menu {
   transform: scale(1);
 }
 
@@ -115,9 +120,9 @@ i {
   cursor: pointer;
   width: 100%;
   height: 100%;
-  gap: .5rem;
+  gap: 0.5rem;
   border-radius: 0;
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
 }
 
 .menu li:hover {
@@ -125,9 +130,8 @@ i {
 }
 
 .menu li i {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
-
 
 .popup-box {
   position: fixed;
@@ -149,20 +153,22 @@ i {
   transform: translate(-50%, -50%);
 }
 
-.popup-box, .popup-box .popup {
+.popup-box,
+.popup-box .popup {
   opacity: 0;
   pointer-events: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.popup-box.show, .popup-box.show .popup {
+.popup-box.show,
+.popup-box.show .popup {
   opacity: 1;
   pointer-events: auto;
 }
 
 .content {
   background-color: #bfdf9b;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 header {
@@ -187,7 +193,7 @@ form :where(input, textarea) {
   resize: none;
   border: none;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 textarea {
@@ -201,7 +207,7 @@ textarea {
 form button {
   width: 100%;
   padding: 1rem 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
 }
